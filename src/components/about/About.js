@@ -10,7 +10,6 @@ import Navigation from '../navigation/Navigation.js';
 import Chevron from './data/Chevron.png';
 
 import './about.css'
-import '../navigation/navigation.css'
 
 const About = () => {
 const props = useSpring({

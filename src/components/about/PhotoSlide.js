@@ -17,13 +17,13 @@ const slides = [
   { id: 0, url: Montana },
   { id: 1, url: Keystone },
   { id: 2, url: Condado },
-  { id: 3, url: Budapest },
-  { id: 4, url: OceanPark },
+  // { id: 3, url: Budapest },
+  // { id: 4, url: OceanPark },
   { id: 5, url: BigSky },
   { id: 6, url: Brussels },
   { id: 7, url: Rincon },
-  { id: 8, url: Isabella },
-  { id: 9, url: Culebra },
+  // { id: 8, url: Isabella },
+  // { id: 9, url: Culebra },
 ]
 
 const PhotoSlide = () => {
@@ -34,7 +34,7 @@ const PhotoSlide = () => {
     leave: { opacity: 0 },
     config: config.molasses,
   })
-  useEffect(() => void setInterval(() => set(state => (state + 1) % 10), 3000), [])
+  useEffect(() => void setInterval(() => set(state => (state + 1) % 6), 5000), [])
   return transitions.map(({ item, props, key }) => (
     <animated.div
       key={key}

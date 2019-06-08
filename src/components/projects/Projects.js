@@ -5,6 +5,8 @@ import { useSpring, animated, config } from 'react-spring';
 import Project1 from './Project1.js';
 import Project2 from './Project2.js';
 import Project3 from './Project3.js';
+import Project4 from './Project4.js';
+import Navigation from '../navigation/Navigation.js';
 
 import Chevron from '../about/data/Chevron.png';
 
@@ -17,13 +19,15 @@ const props = useSpring({
   })
   return (
     <animated.div  style={ props }>
+        <Navigation />
         <div className="about-container">
             <header className="App-header" >
-                <p className="about-header">Recent Projects</p>
+                <p className="projects-header">Recent Projects</p>
                 <div className="about-photo-container">
                     <Project1 />
                     <Project2 />
                     <Project3 />
+                    <Project4 />
                     {/* <LambdaChallenges /> */}
                 </div>
             </header>
