@@ -1,5 +1,8 @@
 import React from 'react'
 import { useSpring, animated } from 'react-spring'
+
+import TripSplit from '../about/data/TripSplit.JPG'
+
 import './projects.css'
 
 const calc = (x, y) => [(y - window.innerHeight / 2) / 200, -(x - window.innerWidth / 2) / 200, 1.1]
