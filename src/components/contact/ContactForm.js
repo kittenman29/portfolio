@@ -1,5 +1,6 @@
-import React, {useState} from 'react'
-import { Link } from 'react-router-dom'
+import React, {useState} from 'react';
+import axios from 'axios';
+import { Link } from 'react-router-dom';
 import { useSpring, animated, config } from 'react-spring';
 
 import Navigation from '../navigation/Navigation.js';
@@ -23,6 +24,37 @@ const Contact = () => {
         buttonText: 'Send Message'
     })
 
+    formSubmit = (e) => {
+        e.preventDefault()
+      
+        setFormState({
+            buttonText: '...sending'
+        })
+      
+        let data = {
+            name: this.state.name,
+            email: this.state.email,
+            message: this.state.message
+        }
+        
+        axios.post('API_URI', data)
+        .then( res => {
+            this.setState({ sent: true }, this.resetForm())
+        })
+        .catch( () => {
+          console.log('Message not sent')
+        })
+      }
+
+      resetForm = () => {
+        setFormState({
+            name: '',
+            message: '',
+            email: '',
+            buttonText: 'Message Sent'
+        })
+    }
+
   return (
     <animated.div className="about-card-container" style={props}>
         <div>
@@ -37,7 +69,7 @@ const Contact = () => {
                 <input onChange={(e) => setFormState({ email: e.target.value})} name="email" class="message-email" type="email" placeholder="your@email.com" required value={formState.email} />
 
                 <div className="button--container">
-                    <button type="submit" className="button button-primary">Send Message</button>
+                    <button type="submit" className="button button-primary">{formState.buttonText}</button>
                 </div>
             </form>
         </div>
