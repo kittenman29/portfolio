@@ -39,6 +39,7 @@ const PhotoSlide = () => {
     <animated.div
       key={key}
       class="bg"
+      alt={`picture of ${item.url}`}
       style={{ ...props, backgroundImage: `url(${item.url})` }}
     />
   ))

@@ -10,6 +10,7 @@ function Project1() {
     xys: [0, 0, .75],
     config: { mass: 5, tension: 350, friction: 40 },
   }))
+  
   return (
     <animated.div
       className="project-card pc1"
