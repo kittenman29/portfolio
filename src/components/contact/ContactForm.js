@@ -37,7 +37,7 @@ const Contact = () => {
             message: this.state.message
         }
         
-        axios.post('API_URI', data)
+        axios.post('https://nodejs-express.willschulz29.now.sh/api/v1', data)
         .then( res => {
             this.setState({ sent: true }, this.resetForm())
         })
