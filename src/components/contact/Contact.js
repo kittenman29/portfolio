@@ -17,9 +17,9 @@ const Contact = () => {
 
 
   return (
-    <animated.div  style={ props }>
+    <animated.div style={ props }>
         <Navigation />
-        <div className="about-container">
+        <div className="contact-container">
             <header className="App-header" >
                 <p className="projects-header">Contact</p>
             </header>

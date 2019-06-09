@@ -35,9 +35,12 @@ const Contact = () => {
         axios.post('https://will-schulz-portfolio-back-end.herokuapp.com/api/v1', data)
         .then( res => {
             setFormState({ sent: true })
+            resetForm()
+            console.log(...formState)
         })
         .catch( () => {
           console.log('Message not sent')
+          resetForm()
         })
       }
 
@@ -50,18 +53,40 @@ const Contact = () => {
         })
     }
 
+    const handleChange = (e) => {
+        e.preventDefault();
+        setFormState({
+            
+        })
+
+    }
+
   return (
-    <animated.div className="about-card-container" style={props}>
+    <animated.div className="contact-card-container" style={props}>
         <div>
             <form className="contact-form" onSubmit={formSubmit}>
-                <label class="message" htmlFor="message-input">Your Message</label>
-                <textarea onChange={e => setFormState({ message: e.target.value})} name="message" class="message-input" type="text" placeholder="Please write your message here" value={formState.message} required/>
+                <label className="message-name" htmlFor="message-name">Your Name</label>
+                <input onChange={e => setFormState({ name: e.target.value})} 
+                name="name" className="message-name" 
+                type="text" 
+                placeholder="Your Name" 
+                value={formState.name}/>
 
-                <label class="message-name" htmlFor="message-name">Your Name</label>
-                <input onChange={e => setFormState({ name: e.target.value})} name="name" class="message-name" type="text" placeholder="Your Name" value={formState.name}/>
-
-                <label class="message-email" htmlFor="message-email">Your Email</label>
-                <input onChange={(e) => setFormState({ email: e.target.value})} name="email" class="message-email" type="email" placeholder="your@email.com" required value={formState.email} />
+                <label className="message-email" htmlFor="message-email">Your Email</label>
+                <input onChange={(e) => setFormState({ email: e.target.value})} 
+                name="email" className="message-email" 
+                type="email" 
+                placeholder="your@email.com" 
+                required 
+                value={formState.email} />
+                
+                <label className="message" htmlFor="message-input">Your Message</label>
+                <textarea onChange={e => setFormState({ message: e.target.value})} 
+                name="message" 
+                className="message-input" 
+                type="text" placeholder="Please write your message here" 
+                value={formState.message} 
+                required/>
 
                 <div className="button--container">
                     <button type="submit" className="button button-primary">{formState.buttonText}</button>
