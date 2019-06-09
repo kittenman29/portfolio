@@ -1,11 +1,6 @@
 import React, {useState} from 'react';
 import axios from 'axios';
-import { Link } from 'react-router-dom';
 import { useSpring, animated, config } from 'react-spring';
-
-import Navigation from '../navigation/Navigation.js';
-
-import Chevron from '../about/data/Chevron.png';
 
 import './contact.css'
 
@@ -26,20 +21,20 @@ const Contact = () => {
 
     const formSubmit = (e) => {
         e.preventDefault()
-      
+        console.log("is this working?")
         setFormState({
             buttonText: '...sending'
         })
       
         let data = {
-            name: this.state.name,
-            email: this.state.email,
-            message: this.state.message
+            name: formState.name,
+            email: formState.email,
+            message: formState.message
         }
         
-        axios.post('https://nodejs-express.willschulz29.now.sh/api/v1', data)
+        axios.post('https://will-schulz-portfolio-back-end.herokuapp.com/api/v1', data)
         .then( res => {
-            this.setState({ sent: true }, this.resetForm())
+            setFormState({ sent: true })
         })
         .catch( () => {
           console.log('Message not sent')
@@ -58,7 +53,7 @@ const Contact = () => {
   return (
     <animated.div className="about-card-container" style={props}>
         <div>
-            <form className="contact-form" onSubmit={ (e) => this.formSubmit(e)}>
+            <form className="contact-form" onSubmit={formSubmit}>
                 <label class="message" htmlFor="message-input">Your Message</label>
                 <textarea onChange={e => setFormState({ message: e.target.value})} name="message" class="message-input" type="text" placeholder="Please write your message here" value={formState.message} required/>
 
