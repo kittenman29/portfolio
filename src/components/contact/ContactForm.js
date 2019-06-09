@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import axios from 'axios';
 import { useSpring, animated, config } from 'react-spring';
 
+
 import './contact.css'
 
 const Contact = () => {
@@ -11,32 +12,23 @@ const Contact = () => {
         delay: '500',
         config: config.slow
     })
-    const [formState, setFormState] = useState({
-        name: '',
-        message: '',
-        email: '',
-        sent: false,
-        buttonText: 'Send Message'
-    })
+    const [name, setName] = useState("");  
+    const [email, setEmail] = useState("");  
+    const [message, setMessage] = useState("");
 
     const formSubmit = (e) => {
         e.preventDefault()
-        console.log("is this working?")
-        setFormState({
-            buttonText: '...sending'
-        })
-      
+
         let data = {
-            name: formState.name,
-            email: formState.email,
-            message: formState.message
+            name: name,
+            email: email,
+            message: message
         }
         
         axios.post('https://will-schulz-portfolio-back-end.herokuapp.com/api/v1', data)
         .then( res => {
-            setFormState({ sent: true })
             resetForm()
-            console.log(...formState)
+            alertSuccess()
         })
         .catch( () => {
           console.log('Message not sent')
@@ -45,51 +37,60 @@ const Contact = () => {
       }
 
       const resetForm = () => {
-        setFormState({
-            name: '',
-            message: '',
-            email: '',
-            buttonText: 'Message Sent'
-        })
+        setName("");
+        setEmail("");
+        setMessage("");
     }
 
-    const handleChange = (e) => {
-        e.preventDefault();
-        setFormState({
-            
-        })
+    const alertSuccess = () => {
+        alert(`
+        Email Sent Successfully!
 
+        Name: ${name}
+        Email Address: ${email}
+        Message: ${message}
+        `)
     }
 
   return (
     <animated.div className="contact-card-container" style={props}>
         <div>
             <form className="contact-form" onSubmit={formSubmit}>
-                <label className="message-name" htmlFor="message-name">Your Name</label>
-                <input onChange={e => setFormState({ name: e.target.value})} 
-                name="name" className="message-name" 
-                type="text" 
-                placeholder="Your Name" 
-                value={formState.name}/>
+                <div className="name-input-container input-container">
+                    <label className="name-label label" htmlFor="message-name">Your Name:</label>
+                    <input onChange={e => setName(e.target.value)}
+                    value={name} 
+                    name="name"
+                    className="name-input" 
+                    type="text" 
+                    placeholder="Your Name" 
+                    />
+                </div>
 
-                <label className="message-email" htmlFor="message-email">Your Email</label>
-                <input onChange={(e) => setFormState({ email: e.target.value})} 
-                name="email" className="message-email" 
-                type="email" 
-                placeholder="your@email.com" 
-                required 
-                value={formState.email} />
+                <div className="email-input-container input-container">
+                    <label className="email-label label" htmlFor="message-email">Your Email:</label>
+                    <input onChange={e => setEmail(e.target.value)} 
+                    name="email" 
+                    className="email-input" 
+                    type="email" 
+                    placeholder="your@email.com" 
+                    required 
+                    value={email}  />
+                </div>
                 
-                <label className="message" htmlFor="message-input">Your Message</label>
-                <textarea onChange={e => setFormState({ message: e.target.value})} 
-                name="message" 
-                className="message-input" 
-                type="text" placeholder="Please write your message here" 
-                value={formState.message} 
-                required/>
+                <div className="message-input-container input-container">
+                    <label className="message-label label" htmlFor="message-input">Your Message:</label>
+                    <textarea onChange={e => setMessage(e.target.value)} 
+                    name="message" 
+                    className="message-input" 
+                    type="text" 
+                    placeholder="Please write your message here" 
+                    value={message} 
+                    required/>
+                </div>
 
                 <div className="button--container">
-                    <button type="submit" className="button button-primary">{formState.buttonText}</button>
+                    <button type="submit" className="button">Submit</button>
                 </div>
             </form>
         </div>
