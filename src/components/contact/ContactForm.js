@@ -24,7 +24,7 @@ const Contact = () => {
         buttonText: 'Send Message'
     })
 
-    formSubmit = (e) => {
+    const formSubmit = (e) => {
         e.preventDefault()
       
         setFormState({
@@ -46,7 +46,7 @@ const Contact = () => {
         })
       }
 
-      resetForm = () => {
+      const resetForm = () => {
         setFormState({
             name: '',
             message: '',
