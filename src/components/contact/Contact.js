@@ -24,8 +24,9 @@ const Contact = () => {
                 <p className="projects-header">Contact</p>
             </header>
             <ContactForm />
-            <img src={Chevron} alt="back-button" className="chevron-back"/>
-            <Link className="back-container" to='/projects'></Link>
+            <Link to='/projects'>
+                <img src={Chevron} alt="back-button" className="chevron-back"/>
+            </Link>
         </div>
     </animated.div>   
     )

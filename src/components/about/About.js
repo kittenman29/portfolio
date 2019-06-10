@@ -28,10 +28,12 @@ const props = useSpring({
                     <Technologies />
                 </div>
             </header>
-            <img src={Chevron} alt="back-button" className="chevron-back"/>
-            <Link className="back-container" to='/'></Link>
-            <img src={Chevron} alt="forward-button" className="chevron-next"/>
-            <Link className="next-container" to='/projects'></Link>
+            <Link to='/'>
+                <img src={Chevron} alt="back-button" className="chevron-back"/>
+            </Link>
+            <Link to='/projects'>
+                <img src={Chevron} alt="forward-button" className="chevron-next"/>
+            </Link>
         </div>
     </animated.div>   
     )

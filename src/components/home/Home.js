@@ -24,8 +24,9 @@ return (
           Hi, my name is Will Schulz
         </animated.div>
         <Subtitle />
-        <img src={Chevron} alt="next-button" className="chevron-next"/>
-        <Link className="next-container" to='/about'></Link>
+        <Link to='/about'>
+          <img src={Chevron} alt="next-button" className="chevron-next"/>
+        </Link>
       </header>
   
   )
