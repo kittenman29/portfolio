@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { useSpring, animated, config } from 'react-spring';
+import { useSpring, animated } from 'react-spring';
 
 import PhotoSlideContainer from './PhotoSlideContainer.js';
 import Technologies from './Technologies.js';
@@ -28,9 +28,9 @@ const props = useSpring({
                     <Technologies />
                 </div>
             </header>
-            <img src={Chevron} className="chevron-back"/>
+            <img src={Chevron} alt="back-button" className="chevron-back"/>
             <Link className="back-container" to='/'></Link>
-            <img src={Chevron} className="chevron-next"/>
+            <img src={Chevron} alt="forward-button" className="chevron-next"/>
             <Link className="next-container" to='/projects'></Link>
         </div>
     </animated.div>   

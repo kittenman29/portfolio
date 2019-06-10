@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { useSpring, animated, config } from 'react-spring';
+import { useSpring, animated } from 'react-spring';
 
 import ProjectFade from './ProjectsFade.js';
 import Navigation from '../navigation/Navigation.js';
@@ -22,9 +22,9 @@ const props = useSpring({
                 <p className="projects-header">Recent Projects</p>
                 <ProjectFade />
             </header>
-            <img src={Chevron} className="chevron-back"/>
+            <img src={Chevron} alt="back-button" className="chevron-back"/>
             <Link className="back-container" to='/about'></Link>
-            <img src={Chevron} className="chevron-next"/>
+            <img src={Chevron} alt="forward-button" className="chevron-next"/>
             <Link className="next-container" to='/contact'></Link>
         </div>
     </animated.div>   

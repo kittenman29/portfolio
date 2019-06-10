@@ -4,13 +4,13 @@ import './about.css'
 
 import Montana from './data/Montana.jpg'
 import BigSky from './data/BigSky.jpg'
-import Budapest from './data/Budapest.jpg'
+// import Budapest from './data/Budapest.jpg'
 import Condado from './data/Condado.jpg'
 import Brussels from './data/Brussels.jpg'
-import Culebra from './data/Culebra.jpg'
-import Isabella from './data/Isabella.jpg'
+// import Culebra from './data/Culebra.jpg'
+// import Isabella from './data/Isabella.jpg'
 import Keystone from './data/Keystone.jpg'
-import OceanPark from './data/OceanPark.jpg'
+// import OceanPark from './data/OceanPark.jpg'
 import Rincon from './data/Rincon.jpg'
 
 const slides = [
@@ -38,7 +38,7 @@ const PhotoSlide = () => {
   return transitions.map(({ item, props, key }) => (
     <animated.div
       key={key}
-      class="bg"
+      className="bg"
       alt={`picture of ${item.url}`}
       style={{ ...props, backgroundImage: `url(${item.url})` }}
     />

@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import { useSpring, animated, config } from 'react-spring';
 
 import './about.css'
@@ -28,16 +27,16 @@ const AboutCard = () => {
         <div >
             <p className="tech-stack-header">Tech Stack</p>
             <div className="logo-container">
-                <img className="stack-logo" src={htmlLogo}/>
-                <img className="stack-logo" src={FirebaseLogo}/>
-                <img className="stack-logo" src={JavascriptLogo}/>
-                <img className="stack-logo" src={ReactLogo}/>
-                <img className="stack-logo" src={NodeLogo}/>
-                <img className="stack-logo" src={GraphQLLogo}/>
-                <img className="stack-logo" src={PostgresLogo}/>
-                <img className="stack-logo" src={PythonLogo}/>
-                <img className="stack-logo" src={MatlabLogo}/>
-                <img className="stack-logo" src={GitLogo}/>
+                <img className="stack-logo" alt="html-logo" src={htmlLogo}/>
+                <img className="stack-logo" alt="firebase-logo" src={FirebaseLogo}/>
+                <img className="stack-logo" alt="javascript-logo" src={JavascriptLogo}/>
+                <img className="stack-logo" alt="react-logo" src={ReactLogo}/>
+                <img className="stack-logo" alt="node-logo" src={NodeLogo}/>
+                <img className="stack-logo" alt="graphql-logo" src={GraphQLLogo}/>
+                <img className="stack-logo" alt="postgres-logo" src={PostgresLogo}/>
+                <img className="stack-logo" alt="python-logo" src={PythonLogo}/>
+                <img className="stack-logo" alt="matlab-logo" src={MatlabLogo}/>
+                <img className="stack-logo" alt="github-logo" src={GitLogo}/>
             </div>
         </div>
     </animated.div>

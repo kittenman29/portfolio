@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import { useSpring, animated, config } from 'react-spring';
 
 import './about.css'
@@ -19,7 +18,7 @@ const AboutCard = () => {
         to become immersed in the world of web development and computer science.
         Even if I don't end up ever getting a job as a developer, doing a coding bootcamp 
         will end up being the best decision of my life.  Being able to express any function, 
-        concept, or equation, memorialize that in script, and share it with the world, is such 
+        concept, or equation, memorialize that in script and share it with the world, is such 
         a powerful concept and it makes me smile everytime I think about it.  I couldn't be any happier to sit down on a nightly basis and read 
         about networking, experiment with a new npm package, or start learning a new language.
         <br />

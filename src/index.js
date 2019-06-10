@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from 'react-dom'
-import { BrowserRouter, Switch, Route, Link } from 'react-router-dom'
+import { BrowserRouter, Switch, Route } from 'react-router-dom'
 
 import './styles.css';
 

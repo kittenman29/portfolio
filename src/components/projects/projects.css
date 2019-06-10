@@ -17,29 +17,29 @@
 
   .pc1 {
     position: absolute;
-    right: 51%;
-    top: 18%;
+    right: 53%;
+    top: 15%;
     background-image: url('../about/data/Griipe.JPG');
   }
   
   .pc2 {
     position: absolute;
-    right: 25%;
-    top: 18%;
+    right: 31%;
+    top: 15%;
     background-image: url('../about/data/TripSplit.JPG');
   }
   
   .pc3 {
     position: absolute;
-    right: 25%;
-    top: 51%;
+    right: 31%;
+    top: 54%;
     background-image: url('../about/data/Pintereach.JPG');
   }
   
   .pc4 {
     position: absolute;
-    right: 51%;
-    top: 51%;
+    right: 53%;
+    top: 54%;
     background-image: url('../about/data/Guidr.JPG');
   }
   
