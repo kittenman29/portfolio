@@ -1,3 +1,15 @@
+.project-card {
+  width: 30ch;
+  height: 30ch;
+  background: grey;
+  border-radius: 5px;
+  background-size: cover;
+  background-position: center center;
+  box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.3);
+  transition: box-shadow 0.5s;
+  will-change: transform;
+  border: 3px solid white;
+}
   .App-header {
     height: 100%;
     width: 100%;
@@ -14,7 +26,7 @@
     position: absolute;
     right: 25%;
     top: 18%;
-    background-image: url('../about/data/Trip-Split.JPG');
+    background-image: url('../about/data/TripSplit.JPG');
   }
   
   .pc3 {
@@ -39,19 +51,6 @@
     margin: 2rem;
   }
   
-  .project-card {
-    width: 30ch;
-    height: 30ch;
-    background: grey;
-    border-radius: 5px;
-    background-image: url('../about/data/Griipe.JPG');
-    background-size: cover;
-    background-position: center center;
-    box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.3);
-    transition: box-shadow 0.5s;
-    will-change: transform;
-    border: 15px solid white;
-  }
   
   .card:hover {
     box-shadow: 0px 30px 100px -10px rgba(0, 0, 0, 0.4);
@@ -60,5 +59,23 @@
   .project-card:hover {
     z-index: 5;
   }
+
+  .icon-one {
+    color: #D7FFFE;
+    height: 3rem;
+    width: 3rem;
+    border: 3px solid #D7FFFE;
+    border-radius: 32px;
+    margin: 0 auto;
+    margin: 79% 42%;
+  }
   
-  
+  .icon-two {
+    color: black;
+    height: 3rem;
+    width: 3rem;
+    border: 3px solid black;
+    border-radius: 32px;
+    margin: 0 auto;
+    margin: 79% 42%;
+  }

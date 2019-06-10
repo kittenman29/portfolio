@@ -1,7 +1,7 @@
-import React from 'react'
+import React from 'react';
 import { useSpring, animated } from 'react-spring'
-
-import Griipe from '../about/data/Griipe.JPG';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGithub } from '@fortawesome/free-brands-svg-icons'
 
 import './projects.css'
 
@@ -15,12 +15,18 @@ function Project1() {
   }))
   
   return (
+    <>
     <animated.div
       className="project-card pc1"
       onMouseMove={({ clientX: x, clientY: y }) => set({ xys: calc(x, y) })}
       onMouseLeave={() => set({ xys: [0, 0, .75] })}
       style={{ transform: props.xys.interpolate(trans) }}
-    />
+    >
+      <a href="https://github.com/kittenman29/labs-call-back-FE">
+        <FontAwesomeIcon className="icon-one fa-3x" icon={faGithub} />
+      </a>
+    </animated.div>
+    </>
   )
 }
 

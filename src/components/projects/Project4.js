@@ -1,5 +1,8 @@
 import React from 'react'
 import { useSpring, animated } from 'react-spring'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGithub } from '@fortawesome/free-brands-svg-icons'
+
 import './projects.css'
 
 const calc = (x, y) => [(y - window.innerHeight / 2) / 200, -(x - window.innerWidth / 2) / 200, 1.1]
@@ -16,7 +19,11 @@ function Project4() {
       onMouseMove={({ clientX: x, clientY: y }) => set({ xys: calc(x, y) })}
       onMouseLeave={() => set({ xys: [0, 0, .75] })}
       style={{ transform: props.xys.interpolate(trans) }}
-    />
+    >
+      <a href="https://github.com/kittenman29/Landing-Page-Will-S">
+        <FontAwesomeIcon className="icon-two fa-3x" icon={faGithub} />
+      </a>
+    </animated.div>
   )
 }
 
