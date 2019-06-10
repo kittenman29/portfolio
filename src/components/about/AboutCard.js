@@ -14,8 +14,18 @@ const AboutCard = () => {
   return (
     <animated.div className="about-card-container" style={props}>
     <div >
-        <p className="about-content top-content">Lorem ipsum dolor amet blue bottle keytar migas forage offal irure gentrify viral vice whatever veniam succulents you probably haven't heard of them ipsum. In direct trade lyft pickled, hexagon culpa hoodie pork belly trust fund et hashtag master cleanse. Chia gochujang hoodie, velit PBR&B in nisi etsy banh mi. Cornhole cloud bread scenester, before they sold out dreamcatcher poke meditation helvetica chartreuse consectetur excepteur. Roof party occaecat pok pok pariatur. Mollit brooklyn intelligentsia chambray ethical taxidermy twee paleo aliqua fashion axe kinfolk, ennui gastropub esse af.</p>
-        <p className="about-content">Tilde esse exercitation quinoa. Portland butcher minim farm-to-table palo santo heirloom pug swag tote bag. Literally 8-bit flexitarian post-ironic anim. Tilde mollit plaid nisi XOXO woke offal elit. Cold-pressed deserunt proident vinyl freegan food truck. Knausgaard copper mug mollit lumbersexual.</p>
+        <p className="about-content top-content">    
+        It has taken me nearly a decade to find a career that I enjoy so much I consider it a hobby. 
+        The 'ah-hah' moments, the strenuous hours of debugging, the stack overflow, the api documentation, the open source repositories, the continual learning and infinte updates.  
+        These are the things that I live for.  I finally took a leap of faith and cleared my schedule for the better part of a year in order to become immersed in the world of web development and computer science.
+        Even if I don't end up ever getting a job as a developer, doing a coding bootcamp will end up being the best decision of my life.  Being able to express any function, concept, or equation, memorialize that in script, 
+        and share it with the world, is such a powerful concept.
+        <br />
+        
+        </p>
+        <p className="about-content">I grew up in a suburb of St. Paul, MN.  I grew up playing hockey, soccer, golf, tennis, and skiing (both downhill and nordic).  I am happy to say that I still love doing all of those activities and still play all of them.  I love the outdoors, hiking, camping, canoeing, and hunting (only birds).
+        
+        </p>
         <p className="about-content">Try-hard polaroid adaptogen wolf fingerstache la croix. Banjo elit bespoke dreamcatcher. Salvia consequat pariatur narwhal. Neutra man braid flexitarian chartreuse. Put a bird on it ramps disrupt forage literally anim PBR&B seitan crucifix.</p>
     </div>
     </animated.div>
