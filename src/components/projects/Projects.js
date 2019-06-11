@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import { useSpring, animated } from 'react-spring';
 
 import ProjectFade from './ProjectsFade.js';
-import Navigation from '../navigation/Navigation.js';
+import Nav3 from '../navigation/Nav3.js';
 
 import Chevron from '../about/data/Chevron.png';
 
@@ -16,17 +16,17 @@ const props = useSpring({
   })
   return (
     <animated.div  style={ props }>
-        <Navigation />
+        <Nav3 />
         <div className="about-container">
             <header className="App-header" >
                 <p className="projects-header">Recent Projects</p>
                 <ProjectFade />
             </header>
             <Link to='/about'>
-                <img src={Chevron} alt="back-button" className="chevron-back"/>
+                <img src={Chevron} alt="back-button" className="back"/>
             </Link>
             <Link to='/contact'>
-                <img src={Chevron} alt="forward-button" className="chevron-next"/>
+                <img src={Chevron} alt="forward-button" className="next"/>
             </Link>
         </div>
     </animated.div>   

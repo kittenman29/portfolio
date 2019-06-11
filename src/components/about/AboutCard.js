@@ -14,31 +14,33 @@ const AboutCard = () => {
     <animated.div className="about-card-container" style={props}>
     <div >
         <p className="about-content top-content">    
-        This past December I took a leap of faith and cleared my schedule for the better part of a year in order 
-        to become immersed in the world of web development and computer science.
-        Even if I don't end up ever getting a job as a developer, doing a coding bootcamp 
-        will end up being the best decision of my life.  Being able to express any function, 
-        concept, or equation, memorialize that in script and share it with the world, is such 
-        a powerful concept and it makes me smile everytime I think about it.  I couldn't be any happier to sit down on a nightly basis and read 
-        about networking, experiment with a new npm package, or start learning a new language.
+        <strong>Hi, I'm Will.</strong> I grew up in a suburb of St. Paul, Minnesota and enjoy playing sports, spending time outdoors, 
+        hanging with my golden retriever, and traveling. I’ve had the opportunity to visit 14 countries and have lived abroad in Spain 
+        and Puerto Rico.
         <br />
         <br />
-        Before Lambda School I had a successful accounting career for 6+ years, but didn't enjoy it. Apart from accounting I studied after work
-        for other professional exams which would hopefully afford me a chance to switch career paths.  I tried my hand at actuarial mathematics and financial mathematics
-        but the burden and time investment was untenable and didn't allow me to have a life outside of work and study.  Having experience and learning about so many different industries has given me a lot of 
-        invaluable experience and insight into how companies are structured and run on a fundamental level.  Apart from developing great communication skills
-        I've also gained many other soft-skills that transfer well to any industry or job including presenting to boards, undergoing audits, conducting audits, 
-        and most recently managing remote workers.
-        I've been fortunate enough to have had a lot of great managers, directors, VPs, and mentors who have guided me and shown me what it takes to be a great leader.  The skill set that
-        was evading me was a stronger tech background.  After being a student at Lambda School, I'm more confident than ever in my abilities to adapt to and learn
-        new technologies and languages quickly.  I love learning and I love the ethos of software engineering where questions are encouraged and continuing education is the norm.  
+        <strong>Here’s the scoop.</strong> After a 6+ year career in accounting and finance, 
+        I took a leap of faith and pursued my passion for web development and computer science through Lambda School, 
+        and I couldn’t be happier. Being able to express any function, concept, or equation, memorialize that in 
+        script and share it with the world, is such a powerful concept. In my spare time I find myself 
+        reading about networking, experimenting with new npm packages, learning new languages, etc. I can’t wait 
+        to see where my new path takes me and what I get to build and create next! 
         </p>
-        <p className="about-content">I grew up in a suburb of St. Paul, MN playing hockey, soccer, golf, tennis, and skiing (both downhill and nordic).  
-        I still love doing all of those activities and still play all of them regularly.  I love the outdoors, hiking, camping, canoeing, and hunting (only birds).
-        I love traveling for vacations, enjoying new experiences, and taking pictures of beautiful landscapes.  
+        <p className="about-content"><strong>I love to learn.</strong> I’ve consistently pushed myself to 
+        broaden my skillset beyond the workplace through continuing education. 
+        From actuarial mathematics to experimenting in the world of cryptocurrency, from woodworking to 
+        studying countless books and articles, I’ll always jump on the opportunity to learn. 
         </p>
         <p className="about-content">
-        I am an avid learner and a lifelong student.  I enjoy helping people.  I love building and creating. 
+        <strong>I have diverse experience.</strong> Having worked for multiple financial institutions, government agencies, 
+        a cryptocurrency hedge fund start-up, a vegetable farm, lumber company and more, I’ve gained invaluable 
+        skills that will benefit my future employer. I have stellar communication skills, can quickly adapt, 
+        am always eager to take on new projects and challenges, and love to problem solve.
+        </p>
+        <p className="about-content"><strong>I am a leader.</strong> From presenting company 
+        financials to a board of directors to coaching a women’s college hockey team, 
+        I’ve never been one to turn down a leadership role. Most recently, I’ve had the 
+        opportunity to work for Lambda School as a project manager to help manage remote learners like myself.
         </p>
     </div>
     </animated.div>

@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { useSpring, animated } from 'react-spring';
 
-import Navigation from '../navigation/Navigation.js';
+import Nav4 from '../navigation/Nav4.js';
 import ContactForm from './ContactForm.js';
 
 import Chevron from '../about/data/Chevron.png';
@@ -18,14 +18,14 @@ const Contact = () => {
 
   return (
     <animated.div style={ props }>
-        <Navigation />
+        <Nav4 />
         <div className="contact-container">
             <header className="App-header" >
                 <p className="projects-header">Contact</p>
             </header>
             <ContactForm />
             <Link to='/projects'>
-                <img src={Chevron} alt="back-button" className="chevron-back"/>
+                <img src={Chevron} alt="back-button" className="back"/>
             </Link>
         </div>
     </animated.div>   

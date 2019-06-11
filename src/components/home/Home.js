@@ -21,11 +21,11 @@ return (
       <header className="home-container">
         <Navigation />
         <animated.div className="header" style={props}>
-          Hi, my name is Will Schulz
+          Hi, my name is Will
         </animated.div>
         <Subtitle />
         <Link to='/about'>
-          <img src={Chevron} alt="next-button" className="chevron-next"/>
+          <img src={Chevron} alt="next-button" className="next"/>
         </Link>
       </header>
   

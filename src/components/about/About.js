@@ -5,7 +5,7 @@ import { useSpring, animated } from 'react-spring';
 import PhotoSlideContainer from './PhotoSlideContainer.js';
 import Technologies from './Technologies.js';
 import AboutCard from './AboutCard.js';
-import Navigation from '../navigation/Navigation.js';
+import Nav2 from '../navigation/Nav2.js';
 
 import Chevron from './data/Chevron.png';
 
@@ -18,7 +18,7 @@ const props = useSpring({
   })
   return (
     <animated.div  style={ props }>
-        <Navigation />
+        <Nav2 />
         <div className="about-container">
             <header className="App-header" >
                 <p className="about-header">About Me</p>
@@ -29,10 +29,10 @@ const props = useSpring({
                 </div>
             </header>
             <Link to='/'>
-                <img src={Chevron} alt="back-button" className="chevron-back"/>
+                <img src={Chevron} alt="back-button" className="back"/>
             </Link>
             <Link to='/projects'>
-                <img src={Chevron} alt="forward-button" className="chevron-next"/>
+                <img src={Chevron} alt="forward-button" className="next"/>
             </Link>
         </div>
     </animated.div>   
