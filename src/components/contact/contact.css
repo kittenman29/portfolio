@@ -67,6 +67,27 @@
     border-radius: 5px;
     border: 0;
     padding: .3rem 2rem;
-    background-color: #D7FFFE;
+    background-color: rgb(177, 238, 255);  
     box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
 }
+
+@media only screen and (max-width: 600px) {
+    .projects-header {
+       font-size: 2.5rem; 
+    }
+    .contact-card-container {
+        width: 95vw;
+        margin: 0 2% 0 0;
+        right: 0;
+    }
+    .button--container{
+        margin-right: 20%;
+    }
+    .button {
+        background-color: rgb(177, 238, 255);  
+    }
+  }
+
+  @media only screen and (max-width: 330px) {
+    
+  }
