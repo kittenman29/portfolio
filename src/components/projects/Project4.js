@@ -14,6 +14,7 @@ function Project4() {
     config: { mass: 5, tension: 350, friction: 40 },
   }))
   return (
+    <>
     <animated.div
       className="project-card pc4"
       onMouseMove={({ clientX: x, clientY: y }) => set({ xys: calc(x, y) })}
@@ -24,6 +25,31 @@ function Project4() {
         <FontAwesomeIcon className="icon-two fa-3x" icon={faGithub} />
       </a>
     </animated.div>
+    {/* <div classname="mobile-project-card">
+      <div className="mc1">
+        <h3 className="mobile-card-header">UI/UX Landing Page</h3>
+        <a className="mobile-card-link" href="https://github.com/kittenman29/Landing-Page-Will-S">
+          <FontAwesomeIcon className="mobile-icon-one fa-3x" icon={faGithub} />
+        </a>
+        <div className="mobile-card-body">
+          <p classname="mobile-card">HTML, LESS, JS</p>
+        </div>
+      </div>
+    </div> */}
+    <div classname="mobile-project-card">
+      <div className="mc1">
+      <div className="mobile-project-header-container">
+        <h3 className="mobile-card-header">UI/UX Landing Page</h3>
+        <a className="mobile-card-link" href="https://github.com/kittenman29/Landing-Page-Will-S">
+          <FontAwesomeIcon className="mobile-icon-one fa-3x" icon={faGithub} />
+        </a>
+      </div>
+        <div className="mobile-card-body">
+        <p classname="mobile-card">HTML, LESS, JS</p>
+        </div>
+      </div>
+    </div>
+    </>
   )
 }
 

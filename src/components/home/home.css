@@ -62,20 +62,25 @@
   /* opacity: 1; */
 }
 
-/* @media only screen and (max-width: 800px) {
-  .header {
-    font-size: 3.5rem;
+@media only screen and (max-width: 600px) {
+  .back {
+    left: -46px;
+    top: 91.5%;
+    height: 7rem;
+    width: 7rem;
+    padding-left: 21px;
+    padding-right: 49px;
+    padding-bottom: 55px;
+    padding-top: 16px;
   }
-  .subtitle {
-    font-size: 1.5rem;
+  .next {
+    right: -46px;
+    top: 91.5%;
+    height: 7rem;
+    width: 7rem;
+    padding-left: 21px;
+    padding-right: 49px;
+    padding-bottom: 55px;
+    padding-top: 16px;
   }
 }
-
-@media only screen and (max-width: 600px) {
-  .header {
-    font-size: 3.5rem;
-  }
-  .subtitle {
-    font-size: 1.5rem;
-  }
-} */

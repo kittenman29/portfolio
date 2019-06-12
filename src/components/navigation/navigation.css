@@ -31,5 +31,8 @@
     font-size: x-large;
     color: black;
     z-index: 1;
+}
 
+.nav3 {
+    margin-right: -19px;
 }

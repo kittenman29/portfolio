@@ -14,7 +14,7 @@ const Nav3 = () => {
 return (
     <animated.div className="nav-container about-nav" style={props}>
       <div>
-        <Link className="primary-nav" to='/home'>Home</Link>
+        <Link className="primary-nav nav3" to='/home'>Home</Link>
         <Link className="secondary-nav" to='/about'>About</Link>
         <Link className="third-nav" to='/contact'>Contact</Link>
       </div>

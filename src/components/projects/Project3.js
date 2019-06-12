@@ -14,6 +14,7 @@ function Project3() {
     config: { mass: 5, tension: 350, friction: 40 },
   }))
   return (
+    <>
     <animated.div
       className="project-card pc3"
       onMouseMove={({ clientX: x, clientY: y }) => set({ xys: calc(x, y) })}
@@ -24,6 +25,21 @@ function Project3() {
         <FontAwesomeIcon className="icon-two fa-3x" icon={faGithub} />
       </a>
     </animated.div>
+    <div classname="mobile-project-card">
+      <div className="mc1">
+      <div className="mobile-project-header-container">
+        <h3 className="mobile-card-header">Front End Project</h3>
+        <a className="mobile-card-link" href="https://github.com/kittenman29/pintereach-front-end">
+          <FontAwesomeIcon className="mobile-icon-one fa-3x" icon={faGithub} />
+        </a>
+      </div>
+        <div className="mobile-card-body">
+        {/* <p classname="mobile-card-details">React, Google Places, Deepgram API, Twitter API</p> */}
+        <p classname="mobile-card">React, LESS, ReactN (Global State Store)</p>
+        </div>
+      </div>
+    </div>
+    </>
   )
 }
 

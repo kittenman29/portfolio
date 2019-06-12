@@ -26,6 +26,20 @@ function Project1() {
         <FontAwesomeIcon className="icon-one fa-3x" icon={faGithub} />
       </a>
     </animated.div>
+    <div classname="mobile-project-card">
+      <div className="mc1">
+      <div className="mobile-project-header-container">
+        <h3 className="mobile-card-header">Full Stack Project</h3>
+        <a className="mobile-card-link" href="https://github.com/kittenman29/labs-call-back-FE">
+          <FontAwesomeIcon className="mobile-icon-one fa-3x" icon={faGithub} />
+        </a>
+      </div>
+        <div className="mobile-card-body">
+        <p classname="mobile-card-details">React, Google Places, Deepgram API, Twitter API</p>
+          <p classname="mobile-card-details">Node, Express, SQLite3, Firebase Oauth</p>
+        </div>
+      </div>
+    </div>
     </>
   )
 }
