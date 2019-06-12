@@ -83,4 +83,18 @@
     padding-bottom: 55px;
     padding-top: 16px;
   }
+  .header {
+    font-size: 2.5rem;
+  }
+  .subtitle {
+    font-size: 1.5rem;
+    margin: 8% 17%;
+  }
+}
+
+@media only screen and (max-width: 330px) {
+  .subtitle {
+    font-size: 1.5rem;
+    margin: 8%; 
+  }
 }

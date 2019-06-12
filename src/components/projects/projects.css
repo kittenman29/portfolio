@@ -214,18 +214,10 @@
   }
 
   @media only screen and (max-width: 330px) {
-    .fa-3x {
-      display: block;
-      width: 1em;
-      color: black;
-      border: 3px solid black;
-      border-radius: 37px;
-      margin: 3px 5px 0 0;
-    }
     .mobile-card-header {
       font-size: 1.25rem;
     }
-    .mobile-card-body {
-      font-size: 0.8rem;
+    .projects-header {
+      font-size: 1.5rem;
     }
   }

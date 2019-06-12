@@ -96,4 +96,27 @@
   .photo-container {
     display: none;
   }
+  .about-header {
+    display: none;
+  }
+  .about-card-container {
+    max-width: 95%;
+    margin-top: 17%;
+    padding: 31px 3px;
+  }
+  .tech-stack-header {
+    font-size: 2rem;
+    margin: 10px auto;
+  }
+  .stack-logo {
+    max-height: 2.7rem;
+    margin: 11px;
+  }
+}
+
+@media only screen and (max-width: 340px) {
+  .stack-logo {
+    max-height: 2.7rem;
+    margin: 1px;
+  }
 }
