@@ -9,7 +9,8 @@
     z-index: 2;
     font-family: 'Nunito', sans-serif;
     font-weight: 200;
-    margin: 16% auto 2%;
+    /* margin: 16% auto 2%; */
+
 }
 
 .subtitle {
@@ -83,7 +84,7 @@
   }
   .subject-header {
     font-size: 2.5rem;
-    margin: 60% auto 2%;
+    /* margin: 60% auto 2%; */
   }
   .subtitle {
     font-size: 1.5rem;
