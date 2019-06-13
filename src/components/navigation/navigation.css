@@ -40,3 +40,14 @@
 .nav4 {
     margin-right: -19px;
 }
+
+.primary-nav:hover {
+    color: rgb(177, 238, 255);
+}
+
+.secondary-nav:hover {
+    color: rgb(177, 238, 255);
+}
+.third-nav:hover {
+    color: rgb(177, 238, 255);
+}
