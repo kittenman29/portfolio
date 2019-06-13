@@ -60,6 +60,25 @@
     z-index: 5;
   }
 
+  
+  .mobile-project-card {
+    display: none;
+  }
+  .mobile-card-header {
+    display: none;
+  }
+  .mobile-card-body {
+    display: none;
+  }
+  .mobile-card {
+    display: none;
+  }
+  .mobile-card-link {
+    display: none;
+  }
+  /* .fa-3x {
+    display: none;
+  } */
   .icon-one {
     color: #D7FFFE;
     height: 3rem;
@@ -78,25 +97,6 @@
     border-radius: 32px;
     margin: 0 auto;
     margin: 79% 42%;
-  }
-
-  .mobile-project-card {
-    display: none;
-  }
-  .mobile-card-header {
-    display: none;
-  }
-  .mobile-card-body {
-    display: none;
-  }
-  .mobile-card {
-    display: none;
-  }
-  .mobile-card-link {
-    display: none;
-  }
-  .fa-3x {
-    display: none;
   }
 
   @media only screen and (max-width: 1200px) {
@@ -121,9 +121,9 @@
     .mobile-card-link {
       display: none;
     }
-    .fa-3x {
+    /* .fa-3x {
       display: none;
-    }
+    } */
   }
 
   @media only screen and (max-width: 800px) {
@@ -155,9 +155,9 @@
   .mobile-card-link {
     display: none;
   }
-  .fa-3x {
+  /* .fa-3x {
     display: none;
-  }
+  } */
 }
 
   @media only screen and (max-width: 600px) {

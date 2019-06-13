@@ -103,6 +103,7 @@
     max-width: 95%;
     margin-top: 17%;
     padding: 31px 3px;
+    max-height: 48vh;
   }
   .tech-stack-header {
     font-size: 2rem;

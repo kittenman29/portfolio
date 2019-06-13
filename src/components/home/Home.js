@@ -20,7 +20,7 @@ const Home = () => {
 return (
       <div className="home-container">
         <Navigation />
-        <animated.div className="header" style={props}>
+        <animated.div className="subject-header" style={props}>
           Hi, my name is Will
         </animated.div>
         <Subtitle />
