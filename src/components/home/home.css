@@ -10,7 +10,7 @@
     font-family: 'Nunito', sans-serif;
     font-weight: 200;
     /* margin: 16% auto 2%; */
-
+    padding: 16% 0 0%;
 }
 
 .subtitle {
@@ -85,6 +85,7 @@
   .subject-header {
     font-size: 2.5rem;
     /* margin: 60% auto 2%; */
+    padding: 57% 0 0;
   }
   .subtitle {
     font-size: 1.5rem;
