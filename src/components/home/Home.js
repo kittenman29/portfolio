@@ -18,7 +18,7 @@ const Home = () => {
 })
 
 return (
-      <header className="home-container">
+      <div className="home-container">
         <Navigation />
         <animated.div className="header" style={props}>
           Hi, my name is Will
@@ -27,7 +27,7 @@ return (
         <Link to='/about'>
           <img src={Chevron} alt="next-button" className="next"/>
         </Link>
-      </header>
+      </div>
   
   )
 }

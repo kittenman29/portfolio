@@ -23,7 +23,6 @@
 
 .next:hover {
   box-shadow: 0px 30px 100px -10px rgba(0, 0, 0, 0.4);
-  /* opacity: 1; */
 }
 .next {
   position: absolute;
@@ -31,7 +30,6 @@
   top: 31.5%;
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
   background-color: rgb(177, 238, 255);
-  /* opacity: .5; */
   height: 13rem;
   width: 13rem;
   border-radius: 164px;
@@ -48,7 +46,6 @@
   top: 31.5%;
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
   background-color: rgb(177, 238, 255);
-  /* opacity: .5; */
   height: 13rem;
   width: 13rem;
   border-radius: 164px;
@@ -59,7 +56,6 @@
 
 .back:hover {
   box-shadow: 0px 30px 100px -10px rgba(0, 0, 0, 0.4);
-  /* opacity: 1; */
 }
 
 @media only screen and (max-width: 600px) {
