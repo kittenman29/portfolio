@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import { Link } from 'react-router-dom'
 import { useSpring, animated, config } from 'react-spring';
 
@@ -8,6 +8,7 @@ import Navigation from '../navigation/Navigation.js';
 import Chevron from '../about/data/Chevron.png'
 
 import './home.css'
+import Axios from 'axios';
 
 const Home = () => {
   const props = useSpring({
@@ -15,6 +16,16 @@ const Home = () => {
     from: { opacity: 0 },
     delay: '150',
     config: config.slow
+})
+
+useEffect(() => {
+  Axios.get('https://will-schulz-portfolio-back-end.herokuapp.com/')
+  .then(res => {
+    console.log(res, 'worked')
+  })
+  .catch(err => {
+    console.log(err, 'api not working')
+  })
 })
 
 return (

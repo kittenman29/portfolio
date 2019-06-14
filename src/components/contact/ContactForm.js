@@ -15,6 +15,7 @@ const Contact = () => {
     const [name, setName] = useState("");  
     const [email, setEmail] = useState("");  
     const [message, setMessage] = useState("");
+    const [waiting, setWaiting] = useState(false);
 
     const formSubmit = (e) => {
         e.preventDefault()
@@ -24,15 +25,20 @@ const Contact = () => {
             email: email,
             message: message
         }
+
+        setWaiting(true)
         
-        axios.post('https://will-schulz-portfolio-back-end.herokuapp.com/api/v1', data)
+        axios.post('https://will-schulz-portfolio-back-end.herokuapp.com/api/v1/changethis', data)
         .then( res => {
             resetForm()
             alertSuccess()
+            setWaiting(false)
         })
         .catch( () => {
           console.log('Message not sent')
           resetForm()
+          alertFailure()
+          setWaiting(false)
         })
       }
 
@@ -49,6 +55,17 @@ const Contact = () => {
         Name: ${name}
         Email Address: ${email}
         Message: ${message}
+        `)
+    }
+
+    const alertFailure = () => {
+        alert(`
+        I'm sorry, something went wrong.
+
+        Could you please be so kind as to email will.schulz29@gmail.com 
+        to let him know his server deployment is broken?
+        
+        Thank you!!!
         `)
     }
 
@@ -89,9 +106,12 @@ const Contact = () => {
                     required/>
                 </div>
 
-                <div className="button--container">
+                {waiting===true ? (
+                    <button className="button">Sending ...</button>
+                ) : (
                     <button type="submit" className="button">Submit</button>
-                </div>
+                )
+                }
             </form>
         </div>
     </animated.div>   

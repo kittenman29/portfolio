@@ -36,12 +36,20 @@ const PhotoSlide = () => {
   })
   useEffect(() => void setInterval(() => set(state => (state + 1) % 6), 5000), [])
   return transitions.map(({ item, props, key }) => (
+    <>
     <animated.div
       key={key}
       className="bg"
       alt={`picture of ${item.url}`}
       style={{ ...props, backgroundImage: `url(${item.url})` }}
     />
+    <img src="Montana" alt="for-loading-purposes-only" className="dont-display"/>
+    <img src="Keystone" alt="for-loading-purposes-only" className="dont-display"/>
+    <img src="Condado" alt="for-loading-purposes-only" className="dont-display"/>
+    <img src="BigSky" alt="for-loading-purposes-only" className="dont-display"/>
+    <img src="Brussels" alt="for-loading-purposes-only" className="dont-display"/>
+    <img src="Rincon" alt="for-loading-purposes-only" className="dont-display"/>
+    </>
   ))
 }
 

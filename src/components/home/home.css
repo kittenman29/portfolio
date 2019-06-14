@@ -24,6 +24,7 @@
 
 .next:hover {
   box-shadow: 0px 30px 100px -10px rgba(0, 0, 0, 0.4);
+  transition: .3s;
 }
 .next {
   position: absolute;
@@ -59,6 +60,7 @@
 
 .back:hover {
   box-shadow: 0px 30px 100px -10px rgba(0, 0, 0, 0.4);
+  transition: .3s;
 }
 
 @media only screen and (max-width: 600px) {
