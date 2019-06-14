@@ -28,7 +28,7 @@ const Contact = () => {
 
         setWaiting(true)
         
-        axios.post('https://will-schulz-portfolio-back-end.herokuapp.com/api/v1/changethis', data)
+        axios.post('https://will-schulz-portfolio-back-end.herokuapp.com/api/v1', data)
         .then( res => {
             resetForm()
             alertSuccess()
@@ -64,7 +64,7 @@ const Contact = () => {
 
         Could you please be so kind as to email will.schulz29@gmail.com 
         to let him know his server deployment is broken?
-        
+
         Thank you!!!
         `)
     }
