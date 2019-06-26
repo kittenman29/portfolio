@@ -33,7 +33,7 @@ const AboutCard = () => {
         </p>
         <p className="about-content">
         <strong>I have diverse experience.</strong> Having worked for multiple financial institutions, government agencies, 
-        a cryptocurrency hedge fund start-up, a vegetable farm, lumber company and more, I’ve gained invaluable 
+        a hedge fund start-up, a vegetable farm, lumber company and more, I’ve gained invaluable 
         skills that will benefit my future employer. I have stellar communication skills, can quickly adapt, 
         am always eager to take on new projects and challenges, and love to problem solve.
         </p>
